@@ -1,0 +1,72 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: green;
+            color:gray;
+        }
+
+        header {
+            background-color:goldenrod; 
+            color:green;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+        }
+
+       .menu-section {
+            margin: 20px;
+            padding: 10px;
+            background-color: green;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        } 
+
+        .menu-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid blueviolet;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .menu-item:hover {
+            background-color: #f9f9f9;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu-item i {
+            margin-right: 10px;
+            color: #999;
+        }
+    </style>

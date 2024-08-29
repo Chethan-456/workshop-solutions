@@ -1,0 +1,26 @@
+header{
+    color:gold;
+    background-color: black;
+    margin: 0%;
+    text-align: center;
+    text-size-adjust:var();
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color:rgb(245, 179, 179);
+    padding: 20px;
+   
+}
+h5{
+    color: rgb(255, 127, 138);
+    text-align: center;
+
+}
+.profile-picture img:hover {
+    transform: scale(1.05);
+}
+footer{
+    color: blue;
+    text-align: center;
+}

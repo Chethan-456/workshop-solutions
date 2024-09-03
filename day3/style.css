@@ -1,0 +1,16 @@
+.calculate{
+    padding: 10px;
+    margin: 200px;
+    background-color: gray;
+    
+}
+*{
+    color: rgb(30, 210, 66);
+    padding: auto;
+}
+h1{
+    text-align: center;
+    background-color: aqua;
+    color: blueviolet;
+    -ms-text-overflow: ellipsis;
+}

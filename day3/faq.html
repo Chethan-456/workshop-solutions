@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frequently asked questions</title>
+    <link rel="stylesheet" href="script.js">
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: gold;
+    margin: 30px;
+    border: solid black;
+    border-style:double;
+    border-radius: 5ex;
+    box-shadow: #333;
+
+    outline: auto;
+}
+.faq-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border-bottom:#333;
+}
+.faq-answer {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    color: #333;
+}
+.arrow {
+    float: right;
+    transition: transform 0.3s ease;
+}
+.arrow.rotate {
+    transform: rotate(90deg);
+}
+</style>
+
+</head>
+<body>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+        <span>What is coding?</span>
+        <span class="arrow">&#9654;</span>
+        <div class="faq-answer">
+            Coding, also known as programming, is the process of writing instructions for computers to follow. These instructions, written in various programming languages like Python, Java, or C++, tell the computer how to perform specific tasks. Essentially, coding is how we communicate with computers and make them do what we want.
+        </div>
+    </div>
+    
+    <div class="faq-item" onclick="toggleFAQ(this)">
+        <span>what is python?</span>
+        <span class="arrow">&#9654;</span>
+        <div class="faq-answer">
+            python is a general interepreted language,
+            it is widely used language
+        </div>
+    </div>
+    
+    <div class="faq-item" onclick="toggleFAQ(this)">
+        <span> what is java?</span>
+        <span class="arrow">&#9654;</span>
+        <div class="faq-answer">
+            ava is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
+        </div>
+    </div>
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const arrow = element.querySelector('.arrow');
+    
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            arrow.classList.toggle('rotate');
+        }
+    </script>
+    
+</body>
+</html>
